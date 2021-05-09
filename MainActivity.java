@@ -19,9 +19,7 @@ public class MainActivity extends AppCompatActivity {
     List<FoodData> myFoodList;
     FoodData mFoodData;
 
-    //private  DatabaseReference databaseReference;
-    //private ValueEventListener eventListener;
-    //ProgressDialog progressDialog;
+    
 
 
 
@@ -42,30 +40,7 @@ public class MainActivity extends AppCompatActivity {
         final MyAdapter myAdapter=new MyAdapter(MainActivity.this,myFoodList);
         mRecyclerView.setAdapter(myAdapter);
 
-       // databaseReference=FirebaseDatabase.getInstance().getReference("Recipe");
-
-        //progressDialog.show();
-
-        //eventListener=databaseReference.addValueEventListener(new ValueEventListener() {
-          //@Override
-          // public void onDataChange(@NonNull DataSnapshot snapshot) {
-               // myFoodList.clear();
-              //  for (DataSnapshot itemSnapshot:snapshot.getChildren() )
-             //  {
-               //    FoodData foodData=itemSnapshot.getValue(FoodData.class);
-                 //   myFoodList.add(foodData);
-              //  }
-                //myAdapter.notifyDataSetChanged();
-                //progressDialog.dismiss();
-            }
-
-            //@Override
-           // public void onCancelled(@NonNull DatabaseError error) {
-            //    progressDialog.dismiss();
-
-           // }
-        //});
-   // }
+      
 
     public void btn_uploadActivity(View view) {
         startActivity(new Intent(this,Upload_Recipe.class));
