@@ -34,9 +34,7 @@ public class MainActivity extends AppCompatActivity {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(MainActivity.this,1);
         mRecyclerView.setLayoutManager(gridLayoutManager);
 
-       // progressDialog=new ProgressDialog(this);
-       // progressDialog.setMessage("Item Loading....");
-
+     
 
 
         myFoodList=new ArrayList<>();
