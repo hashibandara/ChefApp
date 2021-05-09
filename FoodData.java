@@ -29,18 +29,22 @@ public class FoodData {
         this.itemDescription = itemDescription;
     }
 
+    
     public String getItemPrice() {
         return itemPrice;
     }
 
+    
     public void setItemPrice(String itemPrice) {
         this.itemPrice = itemPrice;
     }
 
+    
     public String getItemImage() {
         return itemImage;
     }
 
+    
     public void setItemImage(String itemImage) {
         this.itemImage = itemImage;
     }
